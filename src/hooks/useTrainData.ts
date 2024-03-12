@@ -10,7 +10,7 @@ const useTrainData = (mapid: string) => {
   useEffect(() => {
     setLoading(true);
     fetch(
-      `/api/1.0/ttarrivals.aspx?key=805a2a41b4a944129c9146605d4d5d3d&mapid=${mapid}`
+      `https://lapi.transitchicago.com/1.0/ttarrivals.aspx?key=805a2a41b4a944129c9146605d4d5d3d&mapid=${mapid}`
     )
       .then((response) => {
         if (!response.ok) {
